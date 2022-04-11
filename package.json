@@ -1,0 +1,30 @@
+{
+  "name": "metrofarma",
+  "version": "0.0.1",
+  "description": "Metrofarma web page",
+  "main": "server.js",
+  "scripts": {
+    "test": "",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaajaE/metrofarma.git"
+  },
+  "keywords": [
+    "metrofarma",
+    "web",
+    "html",
+    "js",
+    "css"
+  ],
+  "author": "Dipozitiv Studio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaajaE/metrofarma/issues"
+  },
+  "homepage": "https://github.com/PaajaE/metrofarma#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

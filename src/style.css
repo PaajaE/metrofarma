@@ -1,0 +1,74 @@
+:root {
+  --main-color: black;
+  --inverted-color: white;
+  --grey-color: #00000029;
+  --fs-title: 4.84375rem;
+  --fs-text: 1.5625rem;
+  --fs-href: 1.4583rem;
+  --fs-footer: 18.3rem;
+  --padding-default: 2rem;
+  --section-1-padding-x: 6.223vw;
+  --section-1-padding-y: 3.052vw;
+}
+
+@font-face {
+  font-family: "Publico Roman";
+  src: url("./assets/fonts/Publico-Roman.woff2") format("woff2"),
+    url("./assets/fonts/Publico-Roman.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1vw;
+}
+
+body {
+  font-family: Helvetica;
+  color: var(--main-color);
+  font-size: 100%;
+}
+
+main {
+  width: 100%;
+  /* height: 100%; */
+}
+
+a {
+  font-size: var(--fs-href);
+  color: var(--main-color);
+}
+
+a.inverted {
+  color: var(--inverted-color);
+}
+
+.btn {
+  padding: 0.78125rem 2.427rem 0.8854rem;
+  font-size: var(--fs-href);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--main-color);
+}
+
+.btn.inverted {
+  padding: 0.78125rem 4.427rem 0.8854rem;
+  background-color: var(--main-color);
+  color: var(--inverted-color);
+  border-color: var(--inverted-color);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: var(--padding-default);
+  font-size: var(--fs-text);
+  color: var(--main-color);
+  background-color: var(--inverted-color);
+}
