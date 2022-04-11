@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --main-color: black;
   --inverted-color: white;
   --grey-color: #00000029;
@@ -9,16 +9,7 @@
   --padding-default: 2rem;
   --section-1-padding-x: 6.223vw;
   --section-1-padding-y: 3.052vw;
-}
-
-@font-face {
-  font-family: "Publico Roman";
-  src: url("./assets/fonts/Publico-Roman.woff2") format("woff2"),
-    url("./assets/fonts/Publico-Roman.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+} */
 
 html {
   -webkit-text-size-adjust: 100%;
@@ -30,7 +21,6 @@ html {
 
 body {
   font-family: Helvetica;
-  color: var(--main-color);
   font-size: 100%;
 }
 
@@ -39,7 +29,7 @@ main {
   /* height: 100%; */
 }
 
-a {
+/* a {
   font-size: var(--fs-href);
   color: var(--main-color);
 }
@@ -71,4 +61,4 @@ a.inverted {
   font-size: var(--fs-text);
   color: var(--main-color);
   background-color: var(--inverted-color);
-}
+} */
