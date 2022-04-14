@@ -1,144 +1,134 @@
-@font-face {
-    font-family: "Helvetica";
-    src: url("./assets/fonts/HelveticaNeueCE-Roman.woff2") format("woff2"),
-        url("./assets/fonts/HelveticaNeueCE-Roman.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 :root {
+  /* Colors: */
+  --color-000000: #000000;
+  --color-ff0202: #ff0202;
 
-/* Colors: */
---color-000000: #000000;
---color-ff0202: #FF0202;
-
-/* Font/text values */
---font-family-helvetica-neue: Helvetica Neue;
---font-style-normal: normal;
---font-weight-medium: medium;
---font-weight-bold: bold;
---font-size-20: 20px;
---font-size-25: 25px;
---font-size-28: 28px;
---font-size-38: 38px;
---font-size-40: 40px;
---font-size-45: 45px;
---font-size-55: 55px;
---font-size-65: 65px;
---font-size-75: 75px;
---character-spacing-0: 0px;
---line-spacing-27: 27px;
---line-spacing-30: 30px;
---line-spacing-35: 35px;
---line-spacing-43: 43px;
---line-spacing-45: 45px;
---line-spacing-49: 49px;
---line-spacing-50: 50px;
---line-spacing-60: 60px;
---line-spacing-70: 70px;
---line-spacing-80: 80px;
---decoration-underline: underline;
+  /* Font/text values */
+  --font-family-helvetica-neue: "Helvetica";
+  --font-style-normal: normal;
+  --font-weight-medium: 600;
+  --font-weight-bold: bold;
+  --font-size-20: 20px;
+  --font-size-25: 25px;
+  --font-size-28: 1.4583rem;
+  --font-size-38: 38px;
+  --font-size-40: 2.0833rem;
+  --font-size-45: 45px;
+  --font-size-55: 55px;
+  --font-size-65: 65px;
+  --font-size-75: 75px;
+  --character-spacing-0: 0px;
+  --line-spacing-27: 27px;
+  --line-spacing-30: 30px;
+  --line-spacing-35: 1.823rem;
+  --line-spacing-43: 43px;
+  --line-spacing-45: 45px;
+  --line-spacing-49: 49px;
+  --line-spacing-50: 50px;
+  --line-spacing-60: 60px;
+  --line-spacing-70: 70px;
+  --line-spacing-80: 80px;
+  --decoration-underline: underline;
 }
 
 /* Character Styles */
 .link-secondary {
-font-family: var(--font-family-helvetica-neue);
-font-style: var(--font-style-normal);
-font-weight: var(--font-weight-medium);
-font-size: var(--font-size-40);
-line-height: var(--line-spacing-49);
-letter-spacing: var(--character-spacing-0);
-color: var(--color-000000);
-text-decoration: var(--decoration-underline);
+  font-family: var(--font-family-helvetica-neue);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-40);
+  line-height: var(--line-spacing-49);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-000000);
+  text-decoration: var(--decoration-underline);
 }
 .link {
-font-family: var(--font-family-helvetica-neue);
-font-style: var(--font-style-normal);
-font-weight: var(--font-weight-medium);
-font-size: var(--font-size-25);
-line-height: var(--line-spacing-30);
-letter-spacing: var(--character-spacing-0);
-color: var(--color-ff0202);
+  font-family: var(--font-family-helvetica-neue);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-25);
+  line-height: var(--line-spacing-30);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-ff0202);
 }
 .mikro {
-font-family: var(--font-family-helvetica-neue);
-font-style: var(--font-style-normal);
-font-weight: var(--font-weight-medium);
-font-size: var(--font-size-20);
-line-height: var(--line-spacing-27);
-letter-spacing: var(--character-spacing-0);
-color: var(--color-000000);
+  font-family: var(--font-family-helvetica-neue);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-20);
+  line-height: var(--line-spacing-27);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-000000);
 }
 .text {
-font-family: var(--font-family-helvetica-neue);
-font-style: var(--font-style-normal);
-font-weight: var(--font-weight-medium);
-font-size: var(--font-size-28);
-line-height: var(--line-spacing-35);
-letter-spacing: var(--character-spacing-0);
-color: var(--color-000000);
+  font-family: var(--font-family-helvetica-neue);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-28);
+  line-height: var(--line-spacing-35);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-000000);
 }
 .bullets {
-font-family: var(--font-family-helvetica-neue);
-font-style: var(--font-style-normal);
-font-weight: var(--font-weight-medium);
-font-size: var(--font-size-28);
-line-height: var(--line-spacing-45);
-letter-spacing: var(--character-spacing-0);
-color: var(--color-000000);
+  font-family: var(--font-family-helvetica-neue);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-28);
+  line-height: var(--line-spacing-45);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-000000);
 }
 .character-style-1 {
-font-family: var(--font-family-helvetica-neue);
-font-style: var(--font-style-normal);
-font-weight: var(--font-weight-bold);
-font-size: var(--font-size-55);
-line-height: var(--line-spacing-60);
-letter-spacing: var(--character-spacing-0);
-color: var(--color-000000);
+  font-family: var(--font-family-helvetica-neue);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-55);
+  line-height: var(--line-spacing-60);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-000000);
 }
 h2 {
-font-family: var(--font-family-helvetica-neue);
-font-style: var(--font-style-normal);
-font-weight: var(--font-weight-bold);
-font-size: var(--font-size-65);
-line-height: var(--line-spacing-70);
-letter-spacing: var(--character-spacing-0);
-color: var(--color-000000);
+  font-family: var(--font-family-helvetica-neue);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-65);
+  line-height: var(--line-spacing-70);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-000000);
 }
 h1 {
-font-family: var(--font-family-helvetica-neue);
-font-style: var(--font-style-normal);
-font-weight: var(--font-weight-bold);
-font-size: var(--font-size-75);
-line-height: var(--line-spacing-80);
-letter-spacing: var(--character-spacing-0);
-color: var(--color-000000);
+  font-family: var(--font-family-helvetica-neue);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-75);
+  line-height: var(--line-spacing-80);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-000000);
 }
 h3 {
-font-family: var(--font-family-helvetica-neue);
-font-style: var(--font-style-normal);
-font-weight: var(--font-weight-bold);
-font-size: var(--font-size-45);
-line-height: var(--line-spacing-50);
-letter-spacing: var(--character-spacing-0);
-color: var(--color-000000);
+  font-family: var(--font-family-helvetica-neue);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-45);
+  line-height: var(--line-spacing-50);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-000000);
 }
 h4 {
-font-family: var(--font-family-helvetica-neue);
-font-style: var(--font-style-normal);
-font-weight: var(--font-weight-bold);
-font-size: var(--font-size-38);
-line-height: var(--line-spacing-43);
-letter-spacing: var(--character-spacing-0);
-color: var(--color-000000);
+  font-family: var(--font-family-helvetica-neue);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-38);
+  line-height: var(--line-spacing-43);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-000000);
 }
 .perex {
-font-family: var(--font-family-helvetica-neue);
-font-style: var(--font-style-normal);
-font-weight: var(--font-weight-medium);
-font-size: var(--font-size-40);
-line-height: var(--line-spacing-49);
-letter-spacing: var(--character-spacing-0);
-color: var(--color-000000);
+  font-family: var(--font-family-helvetica-neue);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-40);
+  line-height: var(--line-spacing-49);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-000000);
 }
