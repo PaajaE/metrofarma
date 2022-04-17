@@ -1,0 +1,7 @@
+.section-title .title h1 {
+    width: 75vw;
+}
+
+.section-title .title-image {
+    margin: var(--padding-70-y) 0
+}

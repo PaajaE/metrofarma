@@ -8,26 +8,25 @@
   --font-style-normal: normal;
   --font-weight-medium: 600;
   --font-weight-bold: bold;
-  --font-size-20: 20px;
-  --font-size-25: 25px;
+  --font-size-20: 1,04167rem;
+  --font-size-25: 1,30201rem;
   --font-size-28: 1.4583rem;
-  --font-size-38: 38px;
+  --font-size-38: 1.979rem;
   --font-size-40: 2.0833rem;
-  --font-size-45: 45px;
-  --font-size-55: 55px;
-  --font-size-65: 65px;
-  --font-size-75: 75px;
+  --font-size-45: 2.344rem;
+  --font-size-55: 2.8646rem;
+  --font-size-65: 3.385rem;
+  --font-size-75: 3.906rem;
   --character-spacing-0: 0px;
-  --line-spacing-27: 27px;
-  --line-spacing-30: 30px;
+  --line-spacing-27: 1,406rem;
+  --line-spacing-30: 1.5625rem;
   --line-spacing-35: 1.823rem;
-  --line-spacing-43: 43px;
-  --line-spacing-45: 45px;
-  --line-spacing-49: 49px;
-  --line-spacing-50: 50px;
-  --line-spacing-60: 60px;
-  --line-spacing-70: 70px;
-  --line-spacing-80: 80px;
+  --line-spacing-43: 2.2396rem;
+  --line-spacing-45: 2.344rem;
+  --line-spacing-50: 2.604rem;
+  --line-spacing-60: 3.125rem;
+  --line-spacing-70: 3.646rem;
+  --line-spacing-80: 4.1667rem;
   --decoration-underline: underline;
 }
 
@@ -37,7 +36,7 @@
   font-style: var(--font-style-normal);
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-40);
-  line-height: var(--line-spacing-49);
+  line-height: var(--line-spacing-50);
   letter-spacing: var(--character-spacing-0);
   color: var(--color-000000);
   text-decoration: var(--decoration-underline);
@@ -128,7 +127,11 @@ h4 {
   font-style: var(--font-style-normal);
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-40);
-  line-height: var(--line-spacing-49);
+  line-height: var(--line-spacing-50);
   letter-spacing: var(--character-spacing-0);
   color: var(--color-000000);
+}
+
+a {
+  color: black;
 }
