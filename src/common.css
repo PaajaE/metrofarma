@@ -8,8 +8,8 @@
   --font-style-normal: normal;
   --font-weight-medium: 600;
   --font-weight-bold: bold;
-  --font-size-20: 1,04167rem;
-  --font-size-25: 1,30201rem;
+  --font-size-20: 1, 04167rem;
+  --font-size-25: 1, 30201rem;
   --font-size-28: 1.4583rem;
   --font-size-38: 1.979rem;
   --font-size-40: 2.0833rem;
@@ -18,7 +18,7 @@
   --font-size-65: 3.385rem;
   --font-size-75: 3.906rem;
   --character-spacing-0: 0px;
-  --line-spacing-27: 1,406rem;
+  --line-spacing-27: 1, 406rem;
   --line-spacing-30: 1.5625rem;
   --line-spacing-35: 1.823rem;
   --line-spacing-43: 2.2396rem;
@@ -128,6 +128,15 @@ h4 {
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-40);
   line-height: var(--line-spacing-50);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-000000);
+}
+
+.perex-small {
+  font-family: var(--font-family-helvetica-neue);
+  font-style: var(--font-style-normal);
+  font-size: var(--font-size-28);
+  line-height: var(--line-spacing-35);
   letter-spacing: var(--character-spacing-0);
   color: var(--color-000000);
 }

@@ -1,0 +1,11 @@
+.section-how-to {
+  max-height: unset;
+}
+
+.content-block-right {
+  padding-right: var(--padding-100-x);
+}
+
+.perex {
+  max-width: 66%;
+}
