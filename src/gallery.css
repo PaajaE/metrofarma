@@ -1,0 +1,38 @@
+.section-gallery {
+  padding-bottom: var(--padding-100-y);
+}
+
+.gallery-container {
+  width: calc(2 / 3 * 100vw);
+  height: calc(0.759 * 100vh);
+  margin: auto;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.gallery-item img {
+  max-width: calc(2 / 3 * 100vw);
+  max-height: calc(0.759 * 100vh);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

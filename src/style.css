@@ -408,7 +408,11 @@ main {
   margin: 0;
 }
 
-.perex-small:nth-of-type(2) {
+.perex-small:not(:first-of-type) {
+  padding-top: var(--padding-70-y);
+}
+
+.perex:not(:first-of-type) {
   padding-top: var(--padding-70-y);
 }
 
@@ -439,7 +443,7 @@ main {
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 43px;
   padding: calc(1.5 * var(--rem-vertical)) calc(9 * var(--rem-vertical));
-  color: black;
+  color: black !important;
   font-size: var(--font-size-28);
   font-weight: 600;
   line-height: var(--line-spacing-35);

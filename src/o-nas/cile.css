@@ -1,0 +1,31 @@
+.content-block {
+  padding: 0 var(--padding-70-x);
+}
+
+.content-block-flex {
+  align-items: flex-start;
+}
+
+.col-3 {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-3 .col-3-title {
+  margin-bottom: var(--padding-70-y);
+}
+
+.col-3 .col-3-text {
+  width: 85%;
+}
+
+.perex-small {
+  font-weight: 600;
+}
+
+.perex-small:not(:first-of-type) {
+  padding-top: calc(var(--padding-70-y) / 2);
+}

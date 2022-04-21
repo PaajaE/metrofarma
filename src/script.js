@@ -1,3 +1,56 @@
+let gallery;
+let galleryItems;
+let slideShowStarted = false;
+let slideIndex = 0;
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  gallery = document.querySelector(".gallery-container");
+  galleryItems = gallery.querySelectorAll(".gallery-item");
+  showSlides();
+});
+
+function showSlides() {
+  let i;
+  let slides = gallery.querySelectorAll(".gallery-item");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "flex";
+  setTimeout(showSlides, 3000);
+}
+
+function isInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// document.addEventListener(
+//   "scroll",
+//   function () {
+//     const messageText = isInViewport(gallery)
+//       ? "The box is visible in the viewport"
+//       : "The box is not visible in the viewport";
+
+//     if (isInViewport(gallery)) {
+//     }
+
+//     console.log(messageText);
+//   },
+//   {
+//     passive: true,
+//   }
+// );
+
 // var getWindowSize = (function () {
 //   var docEl = document.documentElement,
 //     IS_BODY_ACTING_ROOT = docEl && docEl.clientHeight === 0;
@@ -68,7 +121,7 @@
 // }
 
 document.addEventListener("DOMContentLoaded", function (event) {
-  console.log('content loaded', event)
+  console.log("content loaded", event);
   // var preview = document.getElementById("preview");
   // var section1 = document.getElementById("section-1");
   // var previewItems = document.querySelectorAll(".preview-item");
