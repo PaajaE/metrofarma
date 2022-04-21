@@ -34,6 +34,21 @@ function isInViewport(el) {
   );
 }
 
+function toggleMenu() {
+  var x = document.getElementsByTagName("nav");
+  if (x[0].style.display === "block") {
+    x[0].style.display = "none";
+    document.getElementById("menuCloseIcon").style.display = "none";
+    document.getElementById("menuOpenIcon").style.display = "block";
+    document.body.style.overflow = "auto";
+  } else {
+    x[0].style.display = "block";
+    document.body.style.overflow = "hidden";
+    document.getElementById("menuCloseIcon").style.display = "block";
+    document.getElementById("menuOpenIcon").style.display = "none";
+  }
+}
+
 // document.addEventListener(
 //   "scroll",
 //   function () {

@@ -39,7 +39,7 @@ main {
 }
 
 .section-title {
-  margin-top: calc(0.1157 * 100vh);
+  /* margin-top: calc(0.1157 * 100vh); */
   margin-bottom: var(--padding-200-y);
   width: 100%;
 }

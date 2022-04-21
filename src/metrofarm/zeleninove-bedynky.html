@@ -30,12 +30,24 @@
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../gallery.css" />
   <link rel="stylesheet" href="./zeleninove-bedynky.css" />
+  <link rel="stylesheet" href="../menu.css" />
 </head>
 
 <body>
-  <header></header>
-  <main>
+  <header>
+    <div class="sticky">
+      <div class="menu-container">
+        <div class="logo-container">
+          <img src="../assets/images/logo.png" title="" alt="" />
+        </div>
+        <div id="menuOpenIcon" class="menu-toggle" onclick="toggleMenu()">
+          Menu
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <main>
     <section id="sectionTitle" class="section-title">
       <div class="title mb-150">
         <h1>Zeleninové bedýnky</h1>
@@ -385,6 +397,26 @@
       </div>
     </section>
   </main>
+  <nav>
+    <ul class="main-menu">
+      <li>
+        <a href="/#sectionFindUs" title="" onClick="toggleMenu()">Kde nás najdete</a>
+      </li>
+      <li>
+        <ul class="sub-menu">
+          <li><a href="/metrofarm/" title="" onClick="toggleMenu()">MetroFarm</a></li>
+          <li><a href="/metropole/" title="" onClick="toggleMenu()">MetroPole</a></li>
+          <li><a href="/jinofarm/" title="" onClick="toggleMenu()">JinoFarm</a></li>
+        </ul>
+      </li>
+      <li><a href="/guerilla-gardening/" title="" onClick="toggleMenu()">Guerilla Gardening</a></li>
+      <li><a href="/o-nas/" title="" onClick="toggleMenu()">O nás</a></li>
+      <li><a href="#sectionContact" title="" onClick="toggleMenu()">Kontakt</a></li>
+    </ul>
+    <div id="menuCloseIcon" class="menu-close" onclick="toggleMenu()">
+      <img src="../assets/images/krizek.svg" alt="" title="" />
+    </div>
+  </nav>
   <script src="../script.js"></script>
 </body>
 
