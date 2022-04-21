@@ -191,6 +191,7 @@ main {
 }
 
 .section-boxes .box .box-image img {
+  object-fit: cover;
   max-width: 100%;
 }
 
