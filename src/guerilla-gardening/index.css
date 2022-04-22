@@ -82,3 +82,15 @@
 .section-vandalism {
   max-height: unset;
 }
+
+.image-container {
+  position: relative;
+}
+
+.image-note {
+  color: white;
+  position: absolute;
+  width: calc(0.3 * 100vw);
+  bottom: calc(var(--padding-70-y) * 0.85);
+  left: var(--padding-70-x);
+}

@@ -1,4 +1,5 @@
-.section-boss {
+.section-boss,
+.section-others {
   max-height: unset;
 }
 
@@ -61,4 +62,8 @@
 .note {
   font-size: var(--font-size-20);
   padding-top: var(--padding-70-y);
+}
+
+.section-others .note {
+  padding-top: calc(var(--padding-70-y) / 6);
 }

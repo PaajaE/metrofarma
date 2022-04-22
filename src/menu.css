@@ -1,5 +1,5 @@
 .sticky {
-  /* position: fixed; */
+  position: fixed;
   width: 100%;
 }
 
@@ -8,11 +8,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: calc(var(--padding-70-y) / 2) var(--padding-70-x);
+  padding: calc(var(--padding-70-y) / 4) 5%;
 }
 
 .logo-container {
-  width: calc(0.0865 * 100vw);
+  width: calc(0.175 * 100vw);
+  cursor: pointer;
 }
 
 .menu-toggle {
@@ -38,9 +39,8 @@ nav {
 }
 
 .main-menu {
-  width: 50%;
-  margin-left: auto;
-  padding: calc(1 / 6 * 100vh) 0;
+  width: 100%;
+  padding: calc(1 / 6 * 100vh) var(--padding-100-x);
   display: flex;
   flex-direction: column;
 }
@@ -75,4 +75,20 @@ nav {
   width: 26.25px;
   height: 26.25px;
   cursor: pointer;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .menu-container {
+    padding: calc(var(--padding-70-y) / 2) var(--padding-70-x);
+  }
+
+  .logo-container {
+    width: calc(0.0865 * 100vw);
+  }
+
+  .main-menu {
+    width: 50%;
+    margin-left: auto;
+    padding: calc(1 / 6 * 100vh) 0;
+  }
 }
