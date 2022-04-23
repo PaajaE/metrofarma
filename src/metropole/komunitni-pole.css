@@ -1,11 +1,22 @@
+.section-title {
+  justify-content: space-evenly;
+  height: 80vh;
+}
+
 .section-how-to {
   max-height: unset;
 }
 
-.content-block-right {
-  padding-right: var(--padding-100-x);
-}
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .section-title {
+    justify-content: center;
+  }
 
-.perex {
-  max-width: 66%;
+  .content-block-right {
+    padding-right: var(--padding-100-x);
+  }
+
+  .perex {
+    max-width: 66%;
+  }
 }

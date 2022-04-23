@@ -12,7 +12,7 @@
 
 .gallery-container {
   width: calc(0.9 * 100vw);
-  height: calc(0.759 * 100vh);
+  height: calc(0.5 * 100vh);
   margin: auto;
 }
 

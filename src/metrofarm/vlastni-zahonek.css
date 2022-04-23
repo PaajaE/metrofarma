@@ -1,6 +1,12 @@
+.section-title {
+  justify-content: space-evenly;
+  height: 66vh;
+}
+
 .content-block-left ul {
   padding-inline-start: 1em;
-  padding-bottom: var(--padding-100-y);
+  padding-bottom: calc(var(--padding-100-y) / 2);
+  text-align: left;
 }
 
 .content-block-left ul + h3 {
@@ -14,13 +20,35 @@
 }
 
 .content-block-left .note {
+  margin: auto;
+  text-align: center;
   font-size: var(--font-size-20);
 }
 
 .content-block-left .cta {
-  margin-top: var(--padding-70-y);
+  margin-top: calc(var(--padding-70-y) / 2);
 }
 
 .section-membership {
   max-height: unset;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .section-title {
+    justify-content: center;
+  }
+
+  .content-block-left ul {
+    padding-bottom: var(--padding-100-y);
+  }
+
+  .content-block-left .note {
+    margin: 0;
+    text-align: left;
+    font-size: var(--font-size-20);
+  }
+
+  .content-block-left .cta {
+    margin-top: var(--padding-70-y);
+  }
 }
