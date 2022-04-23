@@ -29,6 +29,16 @@
     text-align: right;
   }
 
+  .section-boxes .box:nth-of-type(odd) .box-text .box-contact {
+    align-items: start;
+    text-align: left;
+  }
+
+  .section-boxes .box:nth-of-type(even) .box-text .box-contact {
+    align-items: end;
+    text-align: right;
+  }
+
   .section-boxes .box:nth-of-type(odd) .box-text .box-features {
     justify-content: start;
   }
@@ -37,11 +47,11 @@
     justify-content: end;
   }
 
-  .section-boxes .box:nth-of-type(odd) .box-text .box-contact .perex-small {
+  .section-boxes .box:nth-of-type(odd) .box-text .box-contact .perex {
     margin-left: 0;
   }
 
-  .section-boxes .box:nth-of-type(even) .box-text .box-contact .perex-small {
+  .section-boxes .box:nth-of-type(even) .box-text .box-contact .perex {
     margin-left: auto;
   }
 
@@ -53,7 +63,8 @@
     justify-content: start;
   }
 
-  .perex-small {
+  .perex-small,
+  .perex {
     max-width: 75%;
   }
 }

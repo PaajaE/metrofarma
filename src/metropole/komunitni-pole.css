@@ -10,6 +10,7 @@
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .section-title {
     justify-content: center;
+    height: unset;
   }
 
   .content-block-right {

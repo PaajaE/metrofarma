@@ -41,12 +41,17 @@
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
+  .section-title {
+    height: unset;
+  }
+
   .content-block {
     padding: 0 var(--padding-70-x);
   }
 
   .content-block-flex {
     align-items: flex-start;
+    flex-direction: row;
   }
 
   .col-3 {

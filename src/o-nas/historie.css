@@ -12,6 +12,6 @@
   }
 
   .section-other-title {
-    margin: 0;
+    margin: calc(2 * var(--padding-70-y)) 0;
   }
 }

@@ -239,4 +239,13 @@
   .col-3-price {
     padding-bottom: calc(var(--padding-70-y) / 2);
   }
+
+  .cta {
+    margin: 0;
+    margin-bottom: calc(var(--padding-70-y) / 2);
+  }
+
+  .cta + .perex {
+    margin: 0;
+  }
 }
