@@ -2,6 +2,10 @@
   justify-content: space-around;
 }
 
+.section-other-title {
+  margin: var(--padding-150-y) auto;
+}
+
 .section-boxes .box--1 {
   background-color: #e5b972;
 }
@@ -57,6 +61,11 @@
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .section-title {
     justify-content: center;
+  }
+
+  .section-other-title {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .section-boxes .box .box-text .box-title {
