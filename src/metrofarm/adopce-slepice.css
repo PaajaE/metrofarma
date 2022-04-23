@@ -38,6 +38,12 @@
   justify-content: center;
 }
 
+.section-adoptions h2 {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .section-title {
     justify-content: center;
@@ -72,5 +78,9 @@
   .section-adoptions {
     display: flex;
     justify-content: center;
+  }
+
+  .section-adoptions h2 {
+    max-width: unset;
   }
 }

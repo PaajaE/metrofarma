@@ -2,6 +2,10 @@
   justify-content: space-evenly;
 }
 
+.section-other-title {
+  margin-bottom: var(--padding-150-y);
+}
+
 .section-how-to {
   max-height: unset;
 }

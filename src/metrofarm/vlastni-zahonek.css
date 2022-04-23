@@ -3,6 +3,14 @@
   height: 66vh;
 }
 
+.section-other-title {
+  margin: var(--padding-150-y) auto;
+}
+
+.section-other-title .perex {
+  text-align: center;
+}
+
 .content-block-left ul {
   padding-inline-start: 1em;
   padding-bottom: calc(var(--padding-100-y) / 2);
@@ -37,6 +45,11 @@
   .section-title {
     justify-content: center;
     height: unset;
+  }
+
+  .section-other-title {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .content-block-left ul {
