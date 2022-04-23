@@ -49,6 +49,17 @@ function toggleMenu() {
   }
 }
 
+let prevScrollpos = 0;
+window.onscroll = function () {
+  const currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-20%";
+  }
+  prevScrollpos = currentScrollPos;
+};
+
 // document.addEventListener(
 //   "scroll",
 //   function () {
@@ -135,48 +146,48 @@ function toggleMenu() {
 //   preview.style.left = computedLeft + "px";
 // }
 
-document.addEventListener("DOMContentLoaded", function (event) {
-  console.log("content loaded", event);
-  // var preview = document.getElementById("preview");
-  // var section1 = document.getElementById("section-1");
-  // var previewItems = document.querySelectorAll(".preview-item");
-  // var clientWidth = getWindowSize().width;
+// document.addEventListener("DOMContentLoaded", function (event) {
+//   console.log("content loaded", event);
+// var preview = document.getElementById("preview");
+// var section1 = document.getElementById("section-1");
+// var previewItems = document.querySelectorAll(".preview-item");
+// var clientWidth = getWindowSize().width;
 
-  // var computedWidth = 0;
-  // var firstPreviewWidth = 0;
+// var computedWidth = 0;
+// var firstPreviewWidth = 0;
 
-  // previewItems.forEach(function (item, index) {
-  //   var itemWidthString = window
-  //     .getComputedStyle(item)
-  //     .getPropertyValue("width");
-  //   var itemWidth = itemWidthString.substring(0, itemWidthString.length - 2);
-  //   if (index === 0) {
-  //     firstPreviewWidth = itemWidth;
-  //   }
-  //   computedWidth += +itemWidth;
-  // });
+// previewItems.forEach(function (item, index) {
+//   var itemWidthString = window
+//     .getComputedStyle(item)
+//     .getPropertyValue("width");
+//   var itemWidth = itemWidthString.substring(0, itemWidthString.length - 2);
+//   if (index === 0) {
+//     firstPreviewWidth = itemWidth;
+//   }
+//   computedWidth += +itemWidth;
+// });
 
-  // var sectionPaddingString = window
-  //   .getComputedStyle(section1)
-  //   .getPropertyValue("padding-right");
-  // var sectionPaddingRight = sectionPaddingString.substring(
-  //   0,
-  //   sectionPaddingString.length - 2
-  // );
+// var sectionPaddingString = window
+//   .getComputedStyle(section1)
+//   .getPropertyValue("padding-right");
+// var sectionPaddingRight = sectionPaddingString.substring(
+//   0,
+//   sectionPaddingString.length - 2
+// );
 
-  // var left = clientWidth - firstPreviewWidth - sectionPaddingRight;
+// var left = clientWidth - firstPreviewWidth - sectionPaddingRight;
 
-  // preview.style.left = left + "px";
+// preview.style.left = left + "px";
 
-  // maxLeft = left;
-  // minLeft = left - computedWidth - clientWidth / 5;
+// maxLeft = left;
+// minLeft = left - computedWidth - clientWidth / 5;
 
-  // console.log("sectionPaddingRight", sectionPaddingRight);
-  // console.log("computedWidth", computedWidth);
-  // console.log("left", left);
-  // console.log("maxLeft", maxLeft);
-  // console.log("minLeft", minLeft);
-});
+// console.log("sectionPaddingRight", sectionPaddingRight);
+// console.log("computedWidth", computedWidth);
+// console.log("left", left);
+// console.log("maxLeft", maxLeft);
+// console.log("minLeft", minLeft);
+// });
 
 // function process_touchmove(event) {
 //   console.log(event);
