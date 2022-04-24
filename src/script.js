@@ -5,8 +5,10 @@ let slideIndex = 0;
 
 document.addEventListener("DOMContentLoaded", function (event) {
   gallery = document.querySelector(".gallery-container");
-  galleryItems = gallery.querySelectorAll(".gallery-item");
-  showSlides();
+  if (gallery) {
+    galleryItems = gallery.querySelectorAll(".gallery-item");
+    showSlides();
+  }
 });
 
 function showSlides() {
@@ -52,13 +54,63 @@ function toggleMenu() {
 let prevScrollpos = 0;
 window.onscroll = function () {
   const currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-20%";
+  const navbar = document.getElementById("navbar");
+  if (navbar) {
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-20%";
+    }
   }
   prevScrollpos = currentScrollPos;
 };
+
+function sendForm() {}
+
+const form = document.getElementById("myForm");
+
+form.addEventListener("submit", (event) => {
+  console.log(event);
+  event.preventDefault();
+  // handle the form data
+
+  const M =
+    "entry.1754747753=prvni&entry.1205926966=&entry.454974113=&entry.604248877=ctvrty&entry.798225549=paty&entry.523846686=sesty";
+
+  fetch(
+    "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfx6MsGDo9iY4sv0s21ZzDU8GaOs90OnWNw_dVd_wHjoWSc9A/formResponse?" +
+      M,
+    { method: "POST" }
+  )
+    .then(function (e) {
+      return e.json();
+    })
+    .then(function () {
+      return !1;
+    })
+    .catch(function (e) {
+      console.error("Error:", e);
+    }),
+    alert(e({ id: "contact-sent-message" })),
+    Object(u.c)("/");
+});
+
+// fetch(
+//   "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfx6MsGDo9iY4sv0s21ZzDU8GaOs90OnWNw_dVd_wHjoWSc9A/formResponse?" +
+//     M,
+//   { method: "POST" }
+// )
+//   .then(function (e) {
+//     return e.json();
+//   })
+//   .then(function () {
+//     return !1;
+//   })
+//   .catch(function (e) {
+//     console.error("Error:", e);
+//   }),
+// alert(e({ id: "contact-sent-message" })),
+// Object(u.c)("/");
 
 // document.addEventListener(
 //   "scroll",
