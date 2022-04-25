@@ -3,11 +3,42 @@ let galleryItems;
 let slideShowStarted = false;
 let slideIndex = 0;
 
+let guerillaSlideIndex = 1;
+
+// Next/previous controls
+function plusSlides(n) {
+  showGuerillaSlides(guerillaSlideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showGuerillaSlides(guerillaSlideIndex = n);
+}
+
+function showGuerillaSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("guerilla-slide");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {guerillaSlideIndex = 1}
+  if (n < 1) {guerillaSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[guerillaSlideIndex-1].style.display = "flex";
+  dots[guerillaSlideIndex-1].className += " active";
+}
+
 document.addEventListener("DOMContentLoaded", function (event) {
   gallery = document.querySelector(".gallery-container");
   if (gallery) {
     galleryItems = gallery.querySelectorAll(".gallery-item");
     showSlides();
+  }
+  if(document.getElementsByClassName("guerilla-slide").length > 0) {
+    showGuerillaSlides(guerillaSlideIndex);
   }
 });
 
@@ -69,31 +100,33 @@ function sendForm() {}
 
 const form = document.getElementById("myForm");
 
-form.addEventListener("submit", (event) => {
-  console.log(event);
-  event.preventDefault();
-  // handle the form data
+if(form) {
+  form.addEventListener("submit", (event) => {
+    console.log(event);
+    event.preventDefault();
+    // handle the form data
 
-  const M =
-    "entry.1754747753=prvni&entry.1205926966=&entry.454974113=&entry.604248877=ctvrty&entry.798225549=paty&entry.523846686=sesty";
+    const M =
+      "entry.1754747753=prvni&entry.1205926966=&entry.454974113=&entry.604248877=ctvrty&entry.798225549=paty&entry.523846686=sesty";
 
-  fetch(
-    "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfx6MsGDo9iY4sv0s21ZzDU8GaOs90OnWNw_dVd_wHjoWSc9A/formResponse?" +
-      M,
-    { method: "POST" }
-  )
-    .then(function (e) {
-      return e.json();
-    })
-    .then(function () {
-      return !1;
-    })
-    .catch(function (e) {
-      console.error("Error:", e);
-    }),
-    alert(e({ id: "contact-sent-message" })),
-    Object(u.c)("/");
-});
+    fetch(
+      "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfx6MsGDo9iY4sv0s21ZzDU8GaOs90OnWNw_dVd_wHjoWSc9A/formResponse?" +
+        M,
+      { method: "POST" }
+    )
+      .then(function (e) {
+        return e.json();
+      })
+      .then(function () {
+        return !1;
+      })
+      .catch(function (e) {
+        console.error("Error:", e);
+      }),
+      alert(e({ id: "contact-sent-message" })),
+      Object(u.c)("/");
+  });
+}
 
 // fetch(
 //   "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfx6MsGDo9iY4sv0s21ZzDU8GaOs90OnWNw_dVd_wHjoWSc9A/formResponse?" +
