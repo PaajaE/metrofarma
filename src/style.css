@@ -756,7 +756,7 @@ main {
   display: inline-block;
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 43px;
-  padding: calc(1.5 * var(--rem-vertical)) calc(9 * var(--rem-vertical));
+  padding: calc(1.5 * var(--rem-vertical)) 9vw;
   color: black !important;
   font-size: var(--font-size-28);
   font-weight: 600;

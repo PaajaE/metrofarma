@@ -245,6 +245,12 @@
     margin-bottom: calc(var(--padding-70-y) / 2);
   }
 
+  .col-3 .cta {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
   .cta + .perex {
     margin: 0;
   }
