@@ -93,21 +93,35 @@
         <h2>Photos</h2>
       </div>
       <div class="gallery-container">
-        <div class="gallery-item fade">
-          <img src="../../assets/images/guerilla/Galerie/242322448_126643733047877_1427098322455717261_n.jpg" title=""
-            alt="" />
+        <div class="gallery-wrapper">
+          <div class="gallery-item fade">
+            <img src="../../assets/images/guerilla/Galerie/242322448_126643733047877_1427098322455717261_n.jpg" title=""
+              alt="" />
+          </div>
+          <div class="gallery-item fade">
+            <img src="../../assets/images/guerilla/Galerie/242402233_126615879717329_4330505723802946200_n.jpg" title=""
+              alt="" />
+          </div>
+          <div class="gallery-item fade">
+            <img src="../../assets/images/guerilla/Galerie/242417900_126643279714589_3956706574477428024_n.jpg" title=""
+              alt="" />
+          </div>
+          <div class="gallery-item fade">
+            <img src="../../assets/images/guerilla/Galerie/242477319_126616223050628_6575679463899639252_n.jpg" title=""
+              alt="" />
+          </div>
+
+          <a class="gallery-prev" onclick="plusPhoto(-1)"><img src="../../assets/images/arrow-back.svg" alt=""
+              title="" /></a>
+          <a class="gallery-next" onclick="plusPhoto(1)"><img src="../../assets/images/arrow-back.svg" alt=""
+              title="" /></a>
         </div>
-        <div class="gallery-item fade">
-          <img src="../../assets/images/guerilla/Galerie/242402233_126615879717329_4330505723802946200_n.jpg" title=""
-            alt="" />
-        </div>
-        <div class="gallery-item fade">
-          <img src="../../assets/images/guerilla/Galerie/242417900_126643279714589_3956706574477428024_n.jpg" title=""
-            alt="" />
-        </div>
-        <div class="gallery-item fade">
-          <img src="../../assets/images/guerilla/Galerie/242477319_126616223050628_6575679463899639252_n.jpg" title=""
-            alt="" />
+
+        <div class="gallery-dots">
+          <span class="gallery-dot" onclick="currentPhoto(1)"></span>
+          <span class="gallery-dot" onclick="currentPhoto(2)"></span>
+          <span class="gallery-dot" onclick="currentPhoto(3)"></span>
+          <span class="gallery-dot" onclick="currentPhoto(4)"></span>
         </div>
       </div>
     </section>

@@ -97,17 +97,30 @@
         <h2>Photos</h2>
       </div>
       <div class="gallery-container">
-        <div class="gallery-item fade">
-          <img src="../../assets/images/metropole/komunitni-pole/DJI_0382.jpg" title="" alt="" />
+        <div class="gallery-wrapper">
+          <div class="gallery-item fade">
+            <img src="../../assets/images/metropole/komunitni-pole/DJI_0382.jpg" title="" alt="" />
+          </div>
+          <div class="gallery-item fade">
+            <img src="../../assets/images/metropole/komunitni-pole/IMG_20220317_154748803.jpg" title="" alt="" />
+          </div>
+          <div class="gallery-item fade">
+            <img src="../../assets/images/metropole/komunitni-pole/IMG_20220317_154815826_HDR.jpg" title="" alt="" />
+          </div>
+          <div class="gallery-item fade">
+            <img src="../../assets/images/metropole/komunitni-pole/IMG_20220317_170448152_HDR.jpg" title="" alt="" />
+          </div>
+          <a class="gallery-prev" onclick="plusPhoto(-1)"><img src="../../assets/images/arrow-back.svg" alt=""
+              title="" /></a>
+          <a class="gallery-next" onclick="plusPhoto(1)"><img src="../../assets/images/arrow-back.svg" alt=""
+              title="" /></a>
         </div>
-        <div class="gallery-item fade">
-          <img src="../../assets/images/metropole/komunitni-pole/IMG_20220317_154748803.jpg" title="" alt="" />
-        </div>
-        <div class="gallery-item fade">
-          <img src="../../assets/images/metropole/komunitni-pole/IMG_20220317_154815826_HDR.jpg" title="" alt="" />
-        </div>
-        <div class="gallery-item fade">
-          <img src="../../assets/images/metropole/komunitni-pole/IMG_20220317_170448152_HDR.jpg" title="" alt="" />
+
+        <div class="gallery-dots">
+          <span class="gallery-dot" onclick="currentPhoto(1)"></span>
+          <span class="gallery-dot" onclick="currentPhoto(2)"></span>
+          <span class="gallery-dot" onclick="currentPhoto(3)"></span>
+          <span class="gallery-dot" onclick="currentPhoto(4)"></span>
         </div>
       </div>
     </section>

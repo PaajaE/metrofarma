@@ -99,19 +99,32 @@
         <h2>Fotogalerie</h2>
       </div>
       <div class="gallery-container">
-        <div class="gallery-item fade">
-          <img src="../assets/images/jinofarm/Galerie/189847010_10218511373246848_7027138178762165269_n.jpg" title=""
-            alt="" />
+        <div class="gallery-wrapper">
+          <div class="gallery-item fade">
+            <img src="../assets/images/jinofarm/Galerie/189847010_10218511373246848_7027138178762165269_n.jpg" title=""
+              alt="" />
+          </div>
+          <div class="gallery-item fade">
+            <img src="../assets/images/jinofarm/Galerie/193246135_4019570188089725_51465935612543620_n.jpg" title=""
+              alt="" />
+          </div>
+          <div class="gallery-item fade">
+            <img src="../assets/images/jinofarm/Galerie/20200607_114249.jpg" title="" alt="" />
+          </div>
+          <div class="gallery-item fade">
+            <img src="../assets/images/jinofarm/Galerie/20200610_203709.jpg" title="" alt="" />
+          </div>
+          <a class="gallery-prev" onclick="plusPhoto(-1)"><img src="../assets/images/arrow-back.svg" alt=""
+              title="" /></a>
+          <a class="gallery-next" onclick="plusPhoto(1)"><img src="../assets/images/arrow-back.svg" alt=""
+              title="" /></a>
         </div>
-        <div class="gallery-item fade">
-          <img src="../assets/images/jinofarm/Galerie/193246135_4019570188089725_51465935612543620_n.jpg" title=""
-            alt="" />
-        </div>
-        <div class="gallery-item fade">
-          <img src="../assets/images/jinofarm/Galerie/20200607_114249.jpg" title="" alt="" />
-        </div>
-        <div class="gallery-item fade">
-          <img src="../assets/images/jinofarm/Galerie/20200610_203709.jpg" title="" alt="" />
+
+        <div class="gallery-dots">
+          <span class="gallery-dot" onclick="currentPhoto(1)"></span>
+          <span class="gallery-dot" onclick="currentPhoto(2)"></span>
+          <span class="gallery-dot" onclick="currentPhoto(3)"></span>
+          <span class="gallery-dot" onclick="currentPhoto(4)"></span>
         </div>
       </div>
     </section>

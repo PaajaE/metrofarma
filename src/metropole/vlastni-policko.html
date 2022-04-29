@@ -129,14 +129,26 @@
         <h2>Fotogalerie</h2>
       </div>
       <div class="gallery-container">
-        <div class="gallery-item fade">
-          <img src="../assets/images/metropole/vlastni-policko/MetroPole-navrh.jpg" title="" alt="" />
+        <div class="gallery-wrapper">
+          <div class="gallery-item fade">
+            <img src="../assets/images/metropole/vlastni-policko/MetroPole-navrh.jpg" title="" alt="" />
+          </div>
+          <div class="gallery-item fade">
+            <img src="../assets/images/metropole/vlastni-policko/IMG_20220317_144809772_HDR.jpg" title="" alt="" />
+          </div>
+          <div class="gallery-item fade">
+            <img src="../assets/images/metropole/vlastni-policko/IMG_20211029_110807376.jpg" title="" alt="" />
+          </div>
+          <a class="gallery-prev" onclick="plusPhoto(-1)"><img src="../assets/images/arrow-back.svg" alt=""
+              title="" /></a>
+          <a class="gallery-next" onclick="plusPhoto(1)"><img src="../assets/images/arrow-back.svg" alt=""
+              title="" /></a>
         </div>
-        <div class="gallery-item fade">
-          <img src="../assets/images/metropole/vlastni-policko/IMG_20220317_144809772_HDR.jpg" title="" alt="" />
-        </div>
-        <div class="gallery-item fade">
-          <img src="../assets/images/metropole/vlastni-policko/IMG_20211029_110807376.jpg" title="" alt="" />
+
+        <div class="gallery-dots">
+          <span class="gallery-dot" onclick="currentPhoto(1)"></span>
+          <span class="gallery-dot" onclick="currentPhoto(2)"></span>
+          <span class="gallery-dot" onclick="currentPhoto(3)"></span>
         </div>
       </div>
     </section>
