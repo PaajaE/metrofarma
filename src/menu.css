@@ -74,9 +74,36 @@ nav {
   position: absolute;
   top: var(--padding-70-y);
   right: calc(1.2 * var(--padding-100-x));
-  width: 26.25px;
-  height: 26.25px;
+  width: var(--font-size-28);
+  height: var(--font-size-28);
   cursor: pointer;
+}
+
+.menu-language {
+  position: absolute;
+  display: flex;
+  bottom: var(--padding-70-y);
+  right: calc(1.2 * var(--padding-100-x));
+}
+
+.menu-language div {
+  cursor: pointer;
+  font-size: var(--font-size-30);
+  line-height: var(--line-spacing-50);
+  font-weight: 400;
+}
+
+.menu-language div:first-of-type {
+  padding-right: calc(0.3 * var(--padding-70-x));
+}
+
+.menu-language div:last-of-type {
+  padding-left: calc(0.3 * var(--padding-70-x));
+}
+
+.menu-language .active {
+  font-weight: 600;
+  cursor: default;
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {

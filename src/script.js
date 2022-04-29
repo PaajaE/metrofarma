@@ -7,28 +7,32 @@ let guerillaSlideIndex = 1;
 
 // Next/previous controls
 function plusSlides(n) {
-  showGuerillaSlides(guerillaSlideIndex += n);
+  showGuerillaSlides((guerillaSlideIndex += n));
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showGuerillaSlides(guerillaSlideIndex = n);
+  showGuerillaSlides((guerillaSlideIndex = n));
 }
 
 function showGuerillaSlides(n) {
   let i;
   let slides = document.getElementsByClassName("guerilla-slide");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {guerillaSlideIndex = 1}
-  if (n < 1) {guerillaSlideIndex = slides.length}
+  if (n > slides.length) {
+    guerillaSlideIndex = 1;
+  }
+  if (n < 1) {
+    guerillaSlideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[guerillaSlideIndex-1].style.display = "flex";
-  dots[guerillaSlideIndex-1].className += " active";
+  slides[guerillaSlideIndex - 1].style.display = "flex";
+  dots[guerillaSlideIndex - 1].className += " active";
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -37,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     galleryItems = gallery.querySelectorAll(".gallery-item");
     showSlides();
   }
-  if(document.getElementsByClassName("guerilla-slide").length > 0) {
+  if (document.getElementsByClassName("guerilla-slide").length > 0) {
     showGuerillaSlides(guerillaSlideIndex);
   }
 });
@@ -100,7 +104,7 @@ function sendForm() {}
 
 const form = document.getElementById("myForm");
 
-if(form) {
+if (form) {
   form.addEventListener("submit", (event) => {
     console.log(event);
     event.preventDefault();
@@ -126,6 +130,21 @@ if(form) {
       alert(e({ id: "contact-sent-message" })),
       Object(u.c)("/");
   });
+}
+
+function toggleLang(langId) {
+  const location = window.location;
+
+  let newPath;
+
+  if (langId === "cs") {
+    newPath = location.pathname.replace("/en", "");
+  } else {
+    newPath = "/en" + location.pathname;
+  }
+
+  const newUrl = location.origin + newPath;
+  location.assign(newUrl);
 }
 
 // fetch(
