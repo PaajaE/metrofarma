@@ -996,9 +996,9 @@
             transition: all .4s ease;
             background-color: #000000;
             color: #ffffff;
-            background-color: grey;
+            /* background-color: grey; */
             color: #ffffff;
-            cursor: not-allowed;
+            /* cursor: not-allowed; */
         }
 
         /*!sc*/
@@ -1381,74 +1381,75 @@
                 <section class="Elements__Section-sc-99xfs6-9 gqElfF">
                     <div class="Elements__Flex-sc-99xfs6-5 kontaktni-formular__Wrapper-sc-10u15to-0 kGFcFx fLGxJh">
                         <form id='myForm' class="kontaktni-formular__Form-sc-10u15to-1 gchWUT" onsubmit="sendForm()">
-                            <h1 class="Elements__H1-sc-99xfs6-0 gsKqHB">Contact form</h1>
-                            <p color="red" class="Elements__Pragraph-sc-99xfs6-2 ksxyke">V tuto chvíli jsou všechny
-                                slepice šťastně adoptovány.</p>
+                            <h1 class="Elements__H1-sc-99xfs6-0 gsKqHB">Contact Form</h1>
+                            <p color="red" class="Elements__Pragraph-sc-99xfs6-2 ksxyke">At this time, all hens are
+                                happily adopted.</p>
                             <div
                                 class="Elements__Div-sc-99xfs6-4 kontaktni-formular__FormItem-sc-10u15to-3 gBDLMD jihiXy">
                                 <div
                                     class="Elements__Div-sc-99xfs6-4 kontaktni-formular__Title-sc-10u15to-2 gBDLMD ktLymL">
-                                    Mám zájem o...</div>
+                                    I am interested in...</div>
                                 <div
                                     class="Elements__Flex-sc-99xfs6-5 kontaktni-formular__RadioWrapper-sc-10u15to-6 kGFcFx kUGlcm">
-                                    <input type="radio" disabled="" id="hen"
+                                    <input type="radio" name="option" disabled id="hen"
                                         class="kontaktni-formular__Radio-sc-10u15to-8 gyTNoa" /><label for="hen"
                                         class="kontaktni-formular__RadioCircle-sc-10u15to-7 kHDwdN"></label><label
-                                        for="hen" class="kontaktni-formular__RadioLabel-sc-10u15to-5 QuGjA">Adopce
-                                        slepice</label>
+                                        for="hen" class="kontaktni-formular__RadioLabel-sc-10u15to-5 QuGjA">Hens
+                                        adoption</label>
                                 </div>
                                 <div
                                     class="Elements__Flex-sc-99xfs6-5 kontaktni-formular__RadioWrapper-sc-10u15to-6 kGFcFx kUGlcm">
-                                    <input type="radio" id="garden"
+                                    <input type="radio" name="option" id="garden"
                                         class="kontaktni-formular__Radio-sc-10u15to-8 hsOtfW" /><label for="garden"
                                         class="kontaktni-formular__RadioCircle-sc-10u15to-7 kHDwdN"></label><label
-                                        for="garden" class="kontaktni-formular__RadioLabel-sc-10u15to-5 QuGjA">Vlastní
-                                        záhonek</label>
+                                        for="garden" class="kontaktni-formular__RadioLabel-sc-10u15to-5 QuGjA">Garden
+                                        patch</label>
                                 </div>
                                 <div
                                     class="Elements__Flex-sc-99xfs6-5 kontaktni-formular__RadioWrapper-sc-10u15to-6 kGFcFx kUGlcm">
-                                    <input type="radio" id="field"
+                                    <input type="radio" name="option" id="field"
                                         class="kontaktni-formular__Radio-sc-10u15to-8 cositak" /><label for="field"
                                         class="kontaktni-formular__RadioCircle-sc-10u15to-7 kHDwdN"></label><label
-                                        for="field" class="kontaktni-formular__RadioLabel-sc-10u15to-5 QuGjA">Vlastní
-                                        políčko</label>
+                                        for="field"
+                                        class="kontaktni-formular__RadioLabel-sc-10u15to-5 QuGjA">Field</label>
                                 </div>
                             </div>
                             <div
                                 class="Elements__Div-sc-99xfs6-4 kontaktni-formular__FormItem-sc-10u15to-3 gBDLMD jihiXy">
                                 <div
                                     class="Elements__Div-sc-99xfs6-4 kontaktni-formular__Title-sc-10u15to-2 gBDLMD ktLymL">
-                                    Celé jméno</div><input value="" placeholder="Celé jméno" required="" min="5"
+                                    Full name</div><input value="" id="name" placeholder="Full name" required="" min="5"
                                     class="kontaktni-formular__Input-sc-10u15to-4 esFCsu" />
                             </div>
                             <div
                                 class="Elements__Div-sc-99xfs6-4 kontaktni-formular__FormItem-sc-10u15to-3 gBDLMD jihiXy">
                                 <div
                                     class="Elements__Div-sc-99xfs6-4 kontaktni-formular__Title-sc-10u15to-2 gBDLMD ktLymL">
-                                    Email</div><input type="email" value="" placeholder="Email" min="5" required=""
+                                    Email</div><input type="email" id="email" value="" placeholder="Email" min="5"
+                                    required="" class="kontaktni-formular__Input-sc-10u15to-4 esFCsu" />
+                            </div>
+                            <div
+                                class="Elements__Div-sc-99xfs6-4 kontaktni-formular__FormItem-sc-10u15to-3 gBDLMD jihiXy">
+                                <div
+                                    class="Elements__Div-sc-99xfs6-4 kontaktni-formular__Title-sc-10u15to-2 gBDLMD ktLymL">
+                                    Phone number</div><input type="number" id="phone" value="" min="9"
+                                    placeholder="Telefon" class="kontaktni-formular__Input-sc-10u15to-4 esFCsu" />
+                            </div>
+                            <div
+                                class="Elements__Div-sc-99xfs6-4 kontaktni-formular__FormItem-sc-10u15to-3 gBDLMD jihiXy">
+                                <div
+                                    class="Elements__Div-sc-99xfs6-4 kontaktni-formular__Title-sc-10u15to-2 gBDLMD ktLymL">
+                                    Name of animal (in case of adoption)</div><input value="" id="animal" min="2"
+                                    placeholder="Name of animal"
                                     class="kontaktni-formular__Input-sc-10u15to-4 esFCsu" />
                             </div>
                             <div
                                 class="Elements__Div-sc-99xfs6-4 kontaktni-formular__FormItem-sc-10u15to-3 gBDLMD jihiXy">
                                 <div
                                     class="Elements__Div-sc-99xfs6-4 kontaktni-formular__Title-sc-10u15to-2 gBDLMD ktLymL">
-                                    Telefon</div><input type="number" value="" min="9" placeholder="Telefon"
-                                    class="kontaktni-formular__Input-sc-10u15to-4 esFCsu" />
-                            </div>
-                            <div
-                                class="Elements__Div-sc-99xfs6-4 kontaktni-formular__FormItem-sc-10u15to-3 gBDLMD jihiXy">
-                                <div
-                                    class="Elements__Div-sc-99xfs6-4 kontaktni-formular__Title-sc-10u15to-2 gBDLMD ktLymL">
-                                    Jméno zvíře (v případě adopce zvířat)</div><input value="" min="2"
-                                    placeholder="Jméno zvíře" class="kontaktni-formular__Input-sc-10u15to-4 esFCsu" />
-                            </div>
-                            <div
-                                class="Elements__Div-sc-99xfs6-4 kontaktni-formular__FormItem-sc-10u15to-3 gBDLMD jihiXy">
-                                <div
-                                    class="Elements__Div-sc-99xfs6-4 kontaktni-formular__Title-sc-10u15to-2 gBDLMD ktLymL">
-                                    Poznámka</div><textarea rows="4" cols="50" min="10" placeholder="Poznámka"
+                                    Note</div><textarea id="note" rows="4" cols="50" min="10" placeholder="Note"
                                     class="kontaktni-formular__TextArea-sc-10u15to-9 gusEkf"></textarea>
-                            </div><button type="submit" class="Button-sc-eklmff-0 djSWjQ">Odeslat</button>
+                            </div><button type="submit" class="Button-sc-eklmff-0 djSWjQ">Send</button>
                         </form>
                     </div>
                 </section>
