@@ -1,0 +1,201 @@
+.section-title {
+  justify-content: space-around;
+}
+
+.section-other-title {
+  margin: var(--padding-150-y) auto;
+}
+
+.section-boxes .box--1 {
+  background-color: #e5b972;
+}
+
+.section-boxes .box--2 {
+  background-color: #ff862f;
+}
+
+.section-boxes .box--3 {
+  background-color: #6a4b38;
+}
+
+.section-boxes .box--4 {
+  background-color: #1f9064;
+}
+
+.section-boxes .box--5 {
+  background-color: #ffd800;
+}
+
+.section-boxes .box .box-text {
+  justify-content: center;
+}
+
+.section-boxes .box .box-text .box-contact {
+  padding: 0;
+}
+
+.box .box-text .box-contact .perex-small {
+  width: 100%;
+}
+
+.section-vandalism {
+  max-height: unset;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-note {
+  color: white;
+  position: absolute;
+  width: calc(0.6 * 100vw);
+  bottom: calc(var(--padding-70-y) * 0.4);
+  left: var(--padding-70-x);
+}
+
+.section-contact {
+  margin-top: var(--padding-100-y);
+}
+
+.slideshow-container {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.slideshow {
+  position: relative;
+}
+
+.guerilla-slide {
+  width: 80%;
+  margin: auto;
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -40px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 68px;
+  line-height: 68px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255,0.8);
+}
+
+.dots {
+  text-align: center;
+  margin-top: var(--padding-70-y);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .section-title {
+    justify-content: center;
+  }
+
+  .section-other-title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .section-boxes .box .box-text .box-title {
+    padding-bottom: var(--padding-70-y);
+  }
+
+  .section-boxes .box:nth-of-type(odd) {
+    flex-direction: row;
+  }
+
+  .section-boxes .box:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  .section-boxes .box:nth-of-type(odd) .box-text {
+    align-items: start;
+    text-align: left;
+  }
+
+  .section-boxes .box:nth-of-type(even) .box-text {
+    align-items: end;
+    text-align: right;
+  }
+
+  .section-boxes .box:nth-of-type(odd) .box-text .box-contact {
+    align-items: start;
+    text-align: left;
+  }
+
+  .section-boxes .box:nth-of-type(even) .box-text .box-contact {
+    align-items: end;
+    text-align: right;
+  }
+
+  .section-boxes .box:nth-of-type(odd) .box-text .box-features {
+    justify-content: start;
+  }
+
+  .section-boxes .box:nth-of-type(even) .box-text .box-features {
+    justify-content: end;
+  }
+
+  .section-boxes .box:nth-of-type(odd) .box-text .box-contact .perex-small {
+    margin-left: 0;
+  }
+
+  .section-boxes .box:nth-of-type(even) .box-text .box-contact .perex-small {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .section-boxes .box:nth-of-type(odd) .box-image {
+    justify-content: end;
+  }
+
+  .section-boxes .box:nth-of-type(even) .box-image {
+    justify-content: start;
+  }
+
+  .perex-small {
+    max-width: 75%;
+  }
+
+  .image-note {
+    width: calc(0.3 * 100vw);
+    bottom: calc(var(--padding-70-y) * 0.85);
+  }
+}

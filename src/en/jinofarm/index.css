@@ -1,0 +1,9 @@
+.section-title .title-image {
+  margin: var(--padding-70-y) 0;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .section-title .title h1 {
+    width: 50vw;
+  }
+}

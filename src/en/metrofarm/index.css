@@ -1,0 +1,115 @@
+.section-title {
+  padding: calc(2 * var(--padding-70-y)) 0 var(--padding-70-y) 0;
+}
+
+.section-title .title-image img {
+  width: 90%;
+  /* height: 100vh; */
+}
+
+.section-boxes .box--1 {
+  background-color: #ffd800;
+}
+
+.section-boxes .box--2 {
+  background-color: #1f9064;
+}
+
+.section-boxes .box--3 {
+  background-color: #e5b972;
+}
+
+.section-boxes .box--4 {
+  background-color: #ff862f;
+}
+
+.section-boxes .box--5 {
+  background-color: #6a4b38;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .section-title {
+    padding: calc(var(--padding-70-y)) 0 var(--padding-70-y) 0;
+  }
+  .section-title .title-image img {
+    width: auto;
+    height: 100vh;
+  }
+
+  .section-boxes .box--1 {
+    background-color: #ffd800;
+  }
+
+  .section-boxes .box--2 {
+    background-color: #1f9064;
+  }
+
+  .section-boxes .box--3 {
+    background-color: #e5b972;
+  }
+
+  .section-boxes .box--4 {
+    background-color: #ff862f;
+  }
+
+  .section-boxes .box--5 {
+    background-color: #6a4b38;
+  }
+
+  .section-boxes .box:nth-of-type(odd) {
+    flex-direction: row;
+  }
+
+  .section-boxes .box:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  .section-boxes .box:nth-of-type(odd) .box-text {
+    align-items: start;
+    text-align: left;
+  }
+
+  .section-boxes .box:nth-of-type(even) .box-text {
+    align-items: end;
+    text-align: right;
+  }
+
+  .section-boxes .box:nth-of-type(odd) .box-text .box-contact {
+    align-items: start;
+    text-align: left;
+  }
+
+  .section-boxes .box:nth-of-type(even) .box-text .box-contact {
+    align-items: end;
+    text-align: right;
+  }
+
+  .section-boxes .box:nth-of-type(odd) .box-text .box-features {
+    justify-content: start;
+  }
+
+  .section-boxes .box:nth-of-type(even) .box-text .box-features {
+    justify-content: end;
+  }
+
+  .section-boxes .box:nth-of-type(odd) .box-text .box-contact .perex {
+    margin-left: 0;
+  }
+
+  .section-boxes .box:nth-of-type(even) .box-text .box-contact .perex {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .section-boxes .box:nth-of-type(odd) .box-image {
+    justify-content: end;
+  }
+
+  .section-boxes .box:nth-of-type(even) .box-image {
+    justify-content: start;
+  }
+
+  .perex {
+    max-width: 60%;
+  }
+}
