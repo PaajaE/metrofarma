@@ -3,6 +3,14 @@
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
+  .section-title .title {
+    margin-bottom: calc(var(--padding-70-y) / 2);
+  }
+
+  .section-title .title-image {
+    margin: calc(var(--padding-70-y) / 2) 0 var(--padding-70-y);
+  }
+
   .section-title .title h1 {
     width: 50vw;
   }

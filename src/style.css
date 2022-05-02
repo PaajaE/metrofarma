@@ -17,6 +17,7 @@
   --padding-100-x: calc(0.0521 * 100vw);
   --padding-100-y: calc(0.0926 * 100vh);
   --padding-70-y: calc(0.0648 * 100vh);
+  --header-height: calc((0.0865 * 100vw / 1.395) + var(--padding-70-y));
 }
 
 html {
@@ -108,9 +109,16 @@ main {
     height: unset;
     min-height: unset;
     margin-bottom: var(--padding-200-y);
+    padding: 0;
   }
 
-  .section-title > .title,
+  .section-title > .title {
+    display: block;
+    margin: auto;
+    margin-top: var(--header-height);
+    margin-bottom: var(--padding-150-y);
+  }
+
   .section-other-title > .title {
     display: block;
     margin: auto;
@@ -125,13 +133,14 @@ main {
 
   .section-title .title-image,
   .section-other-title .title-image {
-    margin-top: var(--padding-main-y);
+    margin-top: 0;
     margin-bottom: var(--padding-main-y);
   }
 
   .section-title .title-image img,
   .section-other-title .title-image img {
-    width: calc(0.8 * 100vw);
+    width: auto;
+    height: 66vh;
   }
 
   .section-title .subtitle p,

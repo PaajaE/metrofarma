@@ -1,5 +1,5 @@
 .section-title .title-image img {
-  max-height: 75vh;
+  max-height: 60vh;
   width: calc(100% / 3);
 }
 
@@ -16,6 +16,13 @@
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
+  .section-title .title {
+    margin-bottom: calc(var(--padding-70-y) / 2);
+  }
+
+  .title-image {
+    margin-top: var(--padding-70-y) !important;
+  }
   .subtitle {
     padding-top: var(--padding-70-y);
   }
